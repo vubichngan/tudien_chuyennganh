@@ -11,6 +11,9 @@ import { ManageComponent } from './component/manage/manage.component';
 import { UserComponent } from './component/user/user.component';
 import { HomeComponent } from './component/home/home.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,11 +23,13 @@ import { HomeComponent } from './component/home/home.component';
     AdminComponent,
     ManageComponent,
     UserComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
